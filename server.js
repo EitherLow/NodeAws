@@ -2,14 +2,12 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
+app.use(express.static("build"));
 
 const pokemons = [
   {
     id: 1,
     name: "Pikachu",
-    type: "electric ⚡️",
-    level: 99,
-    image: "/pikachu.webp",
   },
 ];
 
